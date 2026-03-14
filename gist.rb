@@ -5,21 +5,21 @@
 class Gist < Formula
   desc "Context intelligence for LLM applications — index everything, retrieve only what matters"
   homepage "https://github.com/sirerun/gist"
-  version "1.0.0"
+  version "1.1.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sirerun/gist/releases/download/v1.0.0/gist_1.0.0_darwin_amd64.tar.gz"
-      sha256 "b51e521599393b42a30214036fbdcbd06bc9b6ccbb13c3834f516d828ed45e02"
+      url "https://github.com/sirerun/gist/releases/download/v1.1.0/gist_1.1.0_darwin_amd64.tar.gz"
+      sha256 "a9876a0e2b563867e9da7a9ac846cf5017827e82806b378e0b9eea70f8aa4bc0"
 
       define_method(:install) do
         bin.install "gist"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sirerun/gist/releases/download/v1.0.0/gist_1.0.0_darwin_arm64.tar.gz"
-      sha256 "e9e433b20d41fd83299452862eb14fed3a04d562d64f0dc44796f0ba4483cd39"
+      url "https://github.com/sirerun/gist/releases/download/v1.1.0/gist_1.1.0_darwin_arm64.tar.gz"
+      sha256 "956a55369b65962bb4b88faeddcc9203dd527ff2ed05a2196a6da4555de423d3"
 
       define_method(:install) do
         bin.install "gist"
@@ -29,15 +29,15 @@ class Gist < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sirerun/gist/releases/download/v1.0.0/gist_1.0.0_linux_amd64.tar.gz"
-      sha256 "ff08b6567fadd2bc002a77603b62809bfa486f007c80038d1abe475188b08c0d"
+      url "https://github.com/sirerun/gist/releases/download/v1.1.0/gist_1.1.0_linux_amd64.tar.gz"
+      sha256 "02448cbc94f8d9d9bf29d597c8dff65450b0b79b3a88e88650680c9b417f7710"
       define_method(:install) do
         bin.install "gist"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sirerun/gist/releases/download/v1.0.0/gist_1.0.0_linux_arm64.tar.gz"
-      sha256 "90cb2947355c3da1bc153e4e4636f4d436e18d72c6c2ee4323421e692e8d8e17"
+      url "https://github.com/sirerun/gist/releases/download/v1.1.0/gist_1.1.0_linux_arm64.tar.gz"
+      sha256 "5656438764913ad860709511cfe442c3d5b335f0462a7441be66a7c3a1c5794a"
       define_method(:install) do
         bin.install "gist"
       end
