@@ -1,6 +1,16 @@
-# Homebrew Tap for Mint
+# Homebrew Tap for Sire
 
-Install [mint](https://github.com/sirerun/mint):
+## Gist
+
+Context intelligence for AI agents — index everything, retrieve only what matters.
+
+```bash
+brew install sirerun/tap/gist
+```
+
+## Mint
+
+Generate MCP servers from OpenAPI specs — connect agents to any API.
 
 ```bash
 brew install sirerun/tap/mint
