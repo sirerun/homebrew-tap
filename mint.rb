@@ -5,21 +5,21 @@
 class Mint < Formula
   desc "Generate MCP servers from OpenAPI specs"
   homepage "https://github.com/sirerun/mint"
-  version "1.7.7"
+  version "1.8.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sirerun/mint/releases/download/v1.7.7/mint_1.7.7_darwin_amd64.tar.gz"
-      sha256 "e82729ebcb3313472dd2bcd65243669920bcb0b214f695799d0f407b1882556d"
+      url "https://github.com/sirerun/mint/releases/download/v1.8.0/mint_1.8.0_darwin_amd64.tar.gz"
+      sha256 "2944002e4408d8b5f44e12389f2a211090d0c5328ba580fa7470f7c390ab3f58"
 
       define_method(:install) do
         bin.install "mint"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sirerun/mint/releases/download/v1.7.7/mint_1.7.7_darwin_arm64.tar.gz"
-      sha256 "48b389500b316492ee79810ad77ae2a792a7bea2cf60e8ccd4f35b7556a02739"
+      url "https://github.com/sirerun/mint/releases/download/v1.8.0/mint_1.8.0_darwin_arm64.tar.gz"
+      sha256 "24282ac2fc7543ee95d073db1036c9fffd9d89b80f78198c8c335df5049d2f8b"
 
       define_method(:install) do
         bin.install "mint"
@@ -29,15 +29,15 @@ class Mint < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sirerun/mint/releases/download/v1.7.7/mint_1.7.7_linux_amd64.tar.gz"
-      sha256 "1b965c2820db1cc91567e9dc4dd9a9259b514be3194e744affdf3aa0c6ecd8e9"
+      url "https://github.com/sirerun/mint/releases/download/v1.8.0/mint_1.8.0_linux_amd64.tar.gz"
+      sha256 "833fcf2a4463b90a72ff3ff9762f61ed56e28c546c91ad09969022a3795c2342"
       define_method(:install) do
         bin.install "mint"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sirerun/mint/releases/download/v1.7.7/mint_1.7.7_linux_arm64.tar.gz"
-      sha256 "0a2f0c6358bf04c0a3ee7c8fb6fca3370dd5316b1daecc91c0df2af36223b670"
+      url "https://github.com/sirerun/mint/releases/download/v1.8.0/mint_1.8.0_linux_arm64.tar.gz"
+      sha256 "bfbb270b8f0a24e7ddb718ad70d9e4ce867a8418f3a34cbe207a68d04852e0ec"
       define_method(:install) do
         bin.install "mint"
       end
