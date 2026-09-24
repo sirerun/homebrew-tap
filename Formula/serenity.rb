@@ -5,13 +5,13 @@
 class Serenity < Formula
   desc "Claim-based personal memory and direction system"
   homepage "https://github.com/sirerun/serenity"
-  version "0.1.8-hosted-candidate"
+  version "0.1.9-hosted-candidate"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/sirerun/serenity/releases/download/v0.1.8-hosted-candidate/serenity_0.1.8-hosted-candidate_darwin_arm64.tar.gz"
-      sha256 "bef7665e700f6a3d3dd38c9812496cec74ca1b9dd9f2b317f95e5c2792cd0b8d"
+      url "https://github.com/sirerun/serenity/releases/download/v0.1.9-hosted-candidate/serenity_0.1.9-hosted-candidate_darwin_arm64.tar.gz"
+      sha256 "7f3bb42f765be66fe023ab3e6974571d493399c602002b28d2a68820f4fb4ecc"
 
       define_method(:install) do
         bin.install "serenity"
@@ -21,15 +21,15 @@ class Serenity < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sirerun/serenity/releases/download/v0.1.8-hosted-candidate/serenity_0.1.8-hosted-candidate_linux_amd64.tar.gz"
-      sha256 "86b29b798ac2b709144b569bf2fbbd0ba1bbd150097ad5a03945e2f60a78319e"
+      url "https://github.com/sirerun/serenity/releases/download/v0.1.9-hosted-candidate/serenity_0.1.9-hosted-candidate_linux_amd64.tar.gz"
+      sha256 "1321486c6d3c915b19232c0d7b64ddf8923951a47d3f57e58bab655d7b64461e"
       define_method(:install) do
         bin.install "serenity"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sirerun/serenity/releases/download/v0.1.8-hosted-candidate/serenity_0.1.8-hosted-candidate_linux_arm64.tar.gz"
-      sha256 "aa31721551c0dcf7815399fdc690a18c1d2c02894a4a0fb099baee1c024e22dc"
+      url "https://github.com/sirerun/serenity/releases/download/v0.1.9-hosted-candidate/serenity_0.1.9-hosted-candidate_linux_arm64.tar.gz"
+      sha256 "9643d4a81fcdef04f2f88ea41f6d95c0038fe374a1075c6c7bedc6632e570d6d"
       define_method(:install) do
         bin.install "serenity"
       end
