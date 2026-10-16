@@ -7,7 +7,10 @@ cask "mistt" do
   homepage "https://github.com/sirerun/mistt-releases"
   auto_updates true
   depends_on arch: :arm64
-  depends_on macos: "14.2"
+  depends_on macos: :sonoma
+  preflight do
+    odie "MISTT requires macOS 14.2 or later." if MacOS.version < MacOSVersion.new("14.2")
+  end
   app "MISTT.app"
   caveats "MISTT requires macOS 14.2 or later. User configuration is preserved on uninstall."
 end
